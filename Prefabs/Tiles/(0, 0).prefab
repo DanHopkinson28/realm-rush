@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3896209909798130054}
   - component: {fileID: 8705616398326971718}
+  - component: {fileID: 8091245603995403177}
   m_Layer: 0
-  m_Name: Tile_Parent
+  m_Name: (0, 0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24,8 +25,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621207601084453097}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.98389, y: -0.67653656, z: -20.093365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6377491820029438837}
@@ -45,6 +46,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d41fa9c1df1ac15479e6ea8acb744ec6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlaceable: 1
+  towerPrefab: {fileID: 3219458064393657486, guid: 8a965e088bae16643aab3d07ccfd5e2e, type: 3}
+--- !u!65 &8091245603995403177
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621207601084453097}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: -0.5, z: 0}
 --- !u!1 &2753749391336437838
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,7 +240,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (-3, -2)
+  m_text: (0, 0)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
