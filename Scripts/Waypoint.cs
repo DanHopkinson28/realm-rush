@@ -4,24 +4,17 @@ using UnityEngine;
 
 public class Waypoint : MonoBehaviour
 {
-    [SerializeField] GameObject towerPrefab;
+    [SerializeField] Tower towerPrefab;
 
     [SerializeField] bool isPlaceable;
     public bool IsPlaceable { get { return isPlaceable;} }
 
-    void OnMouseOver()
+    void OnMouseDown()
     {
-        if(Input.GetMouseButton(0))
+        if(isPlaceable)
         {
-            if(isPlaceable)
-            {
-                Instantiate(towerPrefab, transform.position, Quaternion.identity);
-                isPlaceable = false;
-            }
-            else
-            {
-                Debug.Log("Cannot place tile on road or water");
-            }
+            bool isPlaced = towerPrefab.CreateTower(towerPrefab, transform.position);
+            isPlaceable = !isPlaced;
         }
     }
 }
