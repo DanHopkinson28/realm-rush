@@ -30,6 +30,7 @@ public class Bank : MonoBehaviour
         currentBalance -= Mathf.Abs(amount);
         UpdateDisplay();
 
+        //Lose the game
         if(currentBalance < 0)
         {
             ReloadScene();
